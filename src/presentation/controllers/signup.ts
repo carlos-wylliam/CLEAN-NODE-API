@@ -1,7 +1,7 @@
-import type { HttpResponse, HttpRequest } from '../protocols/http'
+import { HttpResponse, HttpRequest } from '../protocols/http'
 import { MissingParamError } from '../errors/missingParamsErrors'
 import { badRequest } from '../helpers/httpHelper'
-import type { Controller } from '../protocols/controller'
+import { Controller } from '../protocols/controller'
 
 export class SignUpController implements Controller {
   handle (httpRequest: HttpRequest): HttpResponse {
